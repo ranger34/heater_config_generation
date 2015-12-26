@@ -124,21 +124,21 @@ class file_process:
 		fout8 = open("tempUpperSample.txt", 'a')
 
 		for line in fin10.readlines():
-			p_str = "/*modify here*/{" + (line.split(",")[0])[1:] + "," + line.split(",")[1] + "}, {"\
+			p_str = "/*power modify here*/{" + (line.split(",")[0])[1:] + "," + line.split(",")[1] + "}, {"\
 					+ (line.split(",")[4])[1:] + "," + line.split(",")[5] + "}, {"\
 					+ (line.split(",")[8])[1:] + "," + line.split(",")[9] + "}, {"\
 					+ (line.split(",")[12])[1:] + "," + line.split(",")[13] + "}, {"\
-					+ (line.split(",")[16])[1:] + "," + line.split(",")[17] + "}/*end modify*/"
-			tl_str = "/*modify here*/double temp_lower[rid_t] = {" + (line.split(",")[2])[1:] + ".0,"\
+					+ (line.split(",")[16])[1:] + "," + line.split(",")[17] + "}/*power end modify*/"
+			tl_str = "/*lowTemp modify here*/double temp_lower[rid_t] = {" + (line.split(",")[2])[1:] + ".0,"\
 					+ line.split(",")[6] + ".0," + line.split(",")[10] + ".0,"\
-					+ line.split(",")[14] + ".0," + line.split(",")[18] + ".0}/*end modify*/"
-			th_str = "/*modify here*/double temp_upper[rid_t] = {" + (line.split(",")[3])[1:] + ".0,"\
+					+ line.split(",")[14] + ".0," + line.split(",")[18] + ".0}/*lowTemp end modify*/"
+			tu_str = "/*upTemp modify here*/double temp_upper[rid_t] = {" + (line.split(",")[3])[1:] + ".0,"\
 					+ line.split(",")[7] + ".0," + line.split(",")[11] + ".0,"\
-					+ line.split(",")[15] + ".0, " + line.split(",")[19].strip() + ".0}/*end modify*/"
+					+ line.split(",")[15] + ".0, " + line.split(",")[19].strip() + ".0}/*upTemp end modify*/"
 
 			fout6.write(p_str + '\n')
 			fout7.write(tl_str + '\n')
-			fout8.write(th_str + '\n')
+			fout8.write(tu_str + '\n')
 
 		fin10.close()
 		fout6.close()
