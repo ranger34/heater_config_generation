@@ -1,5 +1,0 @@
-2015-12-26 20:52:19
-/*power modify here*/{670, 870}, {650, 850}, {690, 890}, {680, 880}, {660, 860}/*power end modify*/
-/*lowTemp modify here*/double temp_lower[rid_t] = {286.0, 284.0, 288.0, 287.0, 285.0};/*lowTemp end modify*/
-/*upTemp modify here*/double temp_upper[rid_t] = {302.0, 300.0, 300.0, 299.0, 297.0};/*upTemp end modify*/
-Prob: 0.902468
