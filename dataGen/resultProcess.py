@@ -103,6 +103,20 @@ class result_process:
 				if "/*upTemp modify here*/" in line:
 					fout5.write(line)
 
+	# sample screen
+	def sampleScreen(self):
+		with open("sample.txt", 'r') as fin8, open("prob.txt", 'r') as fin9, open("sample_s.txt", 'a') as fout8, open("prob_s.txt", 'a') as fout9:
+			sampleArray = []
+			probArray = []
+			for sampleLine in fin8.readlines():
+				sampleArray.append(sampleLine.strip())
+			for probLine in fin9.readlines():
+				probArray.append(probLine.strip())
+
+			for i in range(len(sampleArray)):
+				if probArray[i] != '0.951303' and '0.0' not in probArray[i]:
+					fout8.write(sampleArray[i] + '\n')
+					fout9.write(probArray[i] + '\n')
 
 if __name__ == "__main__":
 	rp = result_process()
@@ -110,5 +124,6 @@ if __name__ == "__main__":
 #	rp.findFileAndCopyAndRename()
 #	rp.probSort()
 #	rp.leftProcess()
-	rp.resultMerge()
-	rp.probGeneration()
+#	rp.resultMerge()
+#	rp.probGeneration()
+#	rp.sampleScreen()

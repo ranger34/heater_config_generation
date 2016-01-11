@@ -54,18 +54,15 @@ class file_process:
 
 	# get the remain part that excluding part1 and part2
     def remainUpdate(self):
-		lineArray = []
 		with open("remain_new.txt", 'a') as fout4, open("remain.txt", 'r') as fin5, open("part2.txt", 'r') as fin6:
-			for remainLine in fin5.readlines():
-				lineArray.append(remainLine.replace("\n", ""))
+			array = []
+			for line in fin6.readlines():
+				array.append(line.strip())
 
-			for line in lineArray:
-				fin6.seek(0)
-				for replaceLine in fin6.readlines():
-					replaceLine = replaceLine.strip()
-					if line == replaceLine:
-						lineArray.remove(line)
-				fout4.write(line + '\n')
+			for remainLine in fin5.readlines():
+				newLine = remainLine.strip()
+				if newLine not in array:
+					fout4.write(newLine + '\n')
 
 	# combine 3 parts of data
     def combComplete(self):
@@ -104,12 +101,25 @@ class file_process:
 				fout7.write(tl_str + '\n')
 				fout8.write(tu_str + '\n')
 
+	# generate the prediction set
+    def predictGen(self):
+        with open("remain_new.txt", 'r') as fin10, open("sample.txt", 'r') as fin11, open("prediction.txt", 'a') as fout9:
+			sampleArray = []
+			for sampleLine in fin11.readlines():
+				sampleArray.append(sampleLine.strip())
+
+			for remainLine in fin10.readlines():
+				predictLine = remainLine.split(":")[1].strip()
+				if predictLine not in sampleArray:
+					fout9.write(predictLine + '\n')
+
 
 if __name__ == "__main__":
     fp = file_process()
 #	fp.configFilter()
 #    fp.lineNumChoose()
 #    fp.configExtract()
-#    fp.remainUpdate()
+    fp.remainUpdate()
 #    fp.combComplete()
 #    fp.sampleGen()
+#    fp.predictGen()

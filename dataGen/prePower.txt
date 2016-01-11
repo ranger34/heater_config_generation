@@ -1,0 +1,32 @@
+1:
+/*power modify here*/{560, 760}, { 540, 740}, { 580, 780}, { 570, 770}, { 550, 750}/*power end modify*/
+2:
+/*power modify here*/{560, 760}, { 540, 740}, { 580, 780}, { 570, 770}, { 550, 750}/*power end modify*/
+3:
+/*power modify here*/{560, 760}, { 540, 740}, { 580, 780}, { 570, 770}, { 550, 750}/*power end modify*/
+4:
+/*power modify here*/{570, 770}, { 550, 750}, { 590, 790}, { 580, 780}, { 560, 760}/*power end modify*/
+5:
+/*power modify here*/{560, 760}, { 540, 740}, { 580, 780}, { 570, 770}, { 550, 750}/*power end modify*/
+6:
+/*power modify here*/{560, 760}, { 540, 740}, { 580, 780}, { 570, 770}, { 550, 750}/*power end modify*/
+7:
+/*power modify here*/{560, 760}, { 540, 740}, { 580, 780}, { 570, 770}, { 550, 750}/*power end modify*/
+8:
+/*power modify here*/{560, 760}, { 540, 740}, { 580, 780}, { 570, 770}, { 550, 750}/*power end modify*/
+9:
+/*power modify here*/{560, 760}, { 540, 740}, { 580, 780}, { 570, 770}, { 550, 750}/*power end modify*/
+10:
+/*power modify here*/{560, 760}, { 540, 740}, { 580, 780}, { 570, 770}, { 550, 750}/*power end modify*/
+11:
+/*power modify here*/{560, 760}, { 540, 740}, { 580, 780}, { 570, 770}, { 550, 750}/*power end modify*/
+12:
+/*power modify here*/{560, 760}, { 540, 740}, { 580, 780}, { 570, 770}, { 550, 750}/*power end modify*/
+13:
+/*power modify here*/{560, 760}, { 540, 740}, { 580, 780}, { 570, 770}, { 550, 750}/*power end modify*/
+14:
+/*power modify here*/{560, 760}, { 540, 740}, { 580, 780}, { 570, 770}, { 550, 750}/*power end modify*/
+15:
+/*power modify here*/{560, 760}, { 540, 740}, { 580, 780}, { 570, 770}, { 550, 750}/*power end modify*/
+16:
+/*power modify here*/{560, 760}, { 540, 740}, { 580, 780}, { 570, 770}, { 550, 750}/*power end modify*/
